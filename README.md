@@ -31,5 +31,7 @@ For the given specification we have to ensure that both the MOSFETS operates in 
 So to get the required current, the obtained length and width of the NMOS is 180nm and 600nm respectively.
 The output voltage obtained is 1.66008V.
 The gain obtained is 
+![image](https://github.com/user-attachments/assets/5a6a4fde-7869-44d9-af9d-1020747ade7c)
+
 
 
