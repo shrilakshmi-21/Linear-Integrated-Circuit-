@@ -19,7 +19,22 @@ Resistor(1Kohm), NMOS4, DC power supply, PMOS4
 ## ANALYSIS
 For the given specification we have to ensure that the MOSFET operates in saturation region and obtain the current as 27.77uA.
 So to get the required current, the obtained length and width of the MOSFET is 500nm and 487nm respectively.
+The circuit diagram is as shown in the figure below.
+                  ![image](https://github.com/user-attachments/assets/5808b121-3db3-4f2d-8eb6-26ce52d2bfa1)
+
+# DC Operating point
+                  ![image](https://github.com/user-attachments/assets/ce2c2951-bb93-4a63-ac20-a59d115890e0)
 The output voltage obtained is 1.772V.
+
+# Transient analysis
+                   ![image](https://github.com/user-attachments/assets/0303f2a0-5c0f-4a28-851b-20b9801ff013)
+From the above waveform we can see that the MOSFET acts as a linear amplifier.
+Av=Vout/Vin=2(approx)
+
+# AC Analysis
+                    ![image](https://github.com/user-attachments/assets/9e221784-3b75-4837-8b5c-219f202a41e4)
+                    ![image](https://github.com/user-attachments/assets/1cb0f361-4de5-4da3-8cb8-714e4468aa7d)
+
 The gain obtained is 30.54dB
 
 ## TASK 2
@@ -31,7 +46,7 @@ For the given specification we have to ensure that both the MOSFETS operates in 
 So to get the required current, the obtained length and width of the NMOS is 180nm and 600nm respectively.
 The output voltage obtained is 1.66008V.
 The gain obtained is 
-![image](https://github.com/user-attachments/assets/5a6a4fde-7869-44d9-af9d-1020747ade7c)
+
 
 
 
