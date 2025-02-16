@@ -20,7 +20,14 @@ Resistor(1Kohm), NMOS4, DC power supply, PMOS4
 For the given specification we have to ensure that the MOSFET operates in saturation region and obtain the current as 27.77uA.
 So to get the required current, the obtained length and width of the MOSFET is 500nm and 487nm respectively.
 The output voltage obtained is 1.772V.
+The gain obtained is 30.54dB
 
 ## TASK 2
 ## PROCEDURE
-For the previous circuit replace the load resistor with the 
+For the previous circuit replace the load resistor with the PMOS and give the required voltage.
+
+## ANALYSIS
+For the given specification we have to ensure that both the MOSFETS operates in the saturation region and obtain the current as 27.77uA.
+So to get the required current, the obtained length and width of the NMOS 
+
+
