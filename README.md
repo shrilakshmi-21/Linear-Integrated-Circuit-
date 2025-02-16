@@ -6,7 +6,7 @@ Analyse the CS Amplifier and extract the parameters: DC Operating point, DC anal
 180nm, tsmc, VDD=1.8V, Power budget=50uW
 
 ## COMPONENTS REQUIRED
-Resistor(1Kohm), NMOS, DC power supply
+Resistor(1Kohm), NMOS4, DC power supply, PMOS4
 
 ## TASK 1
 ## PROCEDURE
@@ -20,3 +20,6 @@ Resistor(1Kohm), NMOS, DC power supply
 For the given specification we have to ensure that the MOSFET operates in saturation region and obtain the current as 27.77uA.
 So to get the required current, the obtained length and width of the MOSFET is 500nm and 487nm respectively.
 Fig 1.1 shows the DC anlaysis part of the circuit.
+The output voltage obtained is 1.772V.
+Fig 1.2 shows the Transient analysis part of the circuit.
+Fig 1.3 shows the 
