@@ -28,6 +28,8 @@ For the previous circuit replace the load resistor with the PMOS and give the re
 
 ## ANALYSIS
 For the given specification we have to ensure that both the MOSFETS operates in the saturation region and obtain the current as 27.77uA.
-So to get the required current, the obtained length and width of the NMOS 
+So to get the required current, the obtained length and width of the NMOS is 180nm and 600nm respectively.
+The output voltage obtained is 1.66008V.
+The gain obtained is 
 
 
