@@ -18,8 +18,8 @@ Resistor(1Kohm), NMOS4, DC power supply, PMOS4
 
 ## ANALYSIS
 For the given specification we have to ensure that the MOSFET operates in saturation region and obtain the current as 27.77uA.
-So to get the required current, the obtained length and width of the MOSFET is 500nm and 487nm respectively.
-The circuit diagram is shown in the fig below.
+So to get the required current, the obtained length and width of the MOSFET is 500nm and 487nm respectively. The circuit diagram is shown in the fig below.
+  
   ![image](https://github.com/user-attachments/assets/5808b121-3db3-4f2d-8eb6-26ce52d2bfa1)
 
 # DC Operating point
