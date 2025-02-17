@@ -58,7 +58,8 @@ When the resistive load is replaced with the pmos, it acts like an inverter
 
 # AC analysis
 ![WhatsApp Image 2025-02-17 at 21 57 29_cf6eaae7](https://github.com/user-attachments/assets/51cb3c96-3a9f-4b51-9362-e5b34060b17a)
-![WhatsApp Image 2025-02-17 at 21 59 04_ed01b0df](https://github.com/user-attachments/assets/c9e71e70-08a9-40a5-8b96-f71b863ba2e7)
+![WhatsApp Image 2025-02-17 at 21 59 04_ed01b0df](https://github.com/user-attachments/assets/c9e71e70-08a9-40a5-8b96-f71b863ba2e7)  
+
 The gain obtained is 37.019dB
 
 ## RESULT
@@ -69,10 +70,10 @@ The gain obtained is 37.019dB
 * Gain=30.54dB
 
 # CS Amplifier with resistive load replaced with PMOS
-1. L=180nm, W=300um
-2. Id= 27.7uA
-3. Q point=(1.79V, 27.7uA)
-4. Gain=37.019dB
+* L=180nm, W=300um
+* Id= 27.7uA
+* Q point=(1.79V, 27.7uA)
+* Gain=37.019dB
 
 ## INFERENCE
 
