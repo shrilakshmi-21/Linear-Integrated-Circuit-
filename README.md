@@ -1,4 +1,10 @@
 # Linear-Integrated-Circuit-
+This is the first line.  
+
+
+
+This will be on the next line due to the two spaces at the end of the previous line. 
+
 ## AIM
 Analyse the CS Amplifier and extract the parameters: DC Operating point, DC analysis, gain, power  
 
