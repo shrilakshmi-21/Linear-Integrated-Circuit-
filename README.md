@@ -62,12 +62,10 @@ The gain obtained is 30.54dB
 <br>
 
 ## Procedure
-<br>
 For the previous circuit replace the load resistor with the PMOS and give the required voltage.
 <br>
 
 ## Analysis
-<br>
 For the given specification we have to ensure that both the MOSFETS operates in the saturation region and obtain the current as 27.77uA.
 So to get the required current, the obtained length and width of the NMOS is 180nm and 300um respectively.
 <br>
