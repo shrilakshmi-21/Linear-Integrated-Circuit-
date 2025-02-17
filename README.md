@@ -1,17 +1,17 @@
 # Linear-Integrated-Circuit-
-## Aim
+## AIM
 Analyse the CS Amplifier and extract the parameters: DC Operating point, DC analysis, gain, power  
 <br>
 
-## Specifications
+## SPECIFICATIONS
 180nm, tsmc, VDD=1.8V, Power budget=50uW  
 <br>
 
-## Components required
+## COMPONENTS REQUIRED
 Resistor(1Kohm), NMOS4, DC power supply, PMOS4  
 <br>
 
-## Introduction
+## INTRODUCTION
 CS Amplifier is a voltage amplification circuit, where input signal is applied at the gate terminal and output is taken at the drain of the circuit. This configuration yields high gain and less power dissipiation.  
 A circuit to act as an amplifier, it should be in the saturation region  
 Condition for saturation region:  
@@ -21,10 +21,10 @@ Gain:
 Av=Vout/Vin & Av=-Gm*Rout this indicates how much the input signal is amplified with respect to voltage 
 <br>
 
-## Task 1: CS Amplifier with resistive load
+## TASK 1: CS AMPLIFIER WITH RESISTIVE LOAD
 <br>
 
-## Procedure
+## PROCEDURE
 1. Set VDD=1.8V, input voltage as 0.9V.
 2. Connect the resitor(1kohm) to the drain of the NMOS and make the source as ground.
 3. Set the width and length of the NMOS to get the required current.
@@ -32,7 +32,7 @@ Av=Vout/Vin & Av=-Gm*Rout this indicates how much the input signal is amplified 
 5. Extract the required parameters.
 <br>
 
-## Analysis
+## ANALYSIS
 For the given specification we have to ensure that the MOSFET operates in saturation region and obtain the current as 27.77uA.
 So to get the required current, the obtained length and width of the MOSFET is 500nm and 487nm respectively. The circuit diagram is shown in the fig below.
 <br> 
@@ -66,14 +66,14 @@ From the above waveform we can see that the MOSFET acts as a linear amplifier.
 The gain obtained is 30.54dB
 <br>
 
-## Task 2: CS Amplifier with current source load
+## TASK 2: CS AMPLIFIER WITH CURRENT SOURCE LOAD
 <br>
 
-## Procedure
+## PROCEDURE
 For the previous circuit replace the load resistor with the PMOS and give the required voltage.
 <br>
 
-## Analysis
+## ANALYSIS
 For the given specification we have to ensure that both the MOSFETS operates in the saturation region and obtain the current as 27.77uA.
 So to get the required current, the obtained length and width of the NMOS is 180nm and 300um respectively.
 <br>
