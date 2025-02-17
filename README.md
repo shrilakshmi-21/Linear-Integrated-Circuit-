@@ -112,7 +112,6 @@ The gain obtained is 37.019dB
 * M1 acts as active load.
 
 ## RESULT
-<br>
 
 ### CS Amplifier with resistive load
 * L=500nm, W=487nm
