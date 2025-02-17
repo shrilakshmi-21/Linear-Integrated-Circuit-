@@ -49,6 +49,7 @@ Power dissipiation across resistive load=(Vdd-Vout)*IR1=5.97uW
 <br>
 
 ### Transient analysis
+
 <br>
 
   ![image](https://github.com/user-attachments/assets/62066575-7eb1-4945-8706-d521f0583420)
@@ -90,8 +91,6 @@ Power dissipiation in PMOS=(Vdd-Vout)*Id=3.9nW
 <br>
 
 ![WhatsApp Image 2025-02-17 at 21 55 50_2b7c2955](https://github.com/user-attachments/assets/ab280f43-c367-47d3-ad50-1390c2522752) ![WhatsApp Image 2025-02-17 at 21 54 47_05ed27c3](https://github.com/user-attachments/assets/2df975be-c9e2-4fa2-884f-d51d04e81e45)
-<br>
-When the resistive load is replaced with the pmos, it acts like an inverter
 <br>
 
 ### AC analysis
