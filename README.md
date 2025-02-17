@@ -19,6 +19,7 @@ Av=Vout/Vin & Av=-Gm*Rout this indicates how much the input signal is amplified 
 <br>
 ## Task 1: CS Amplifier with resistive load
 <br>
+
 ## Procedure
 1. Set VDD=1.8V, input voltage as 0.9V.
 2. Connect the resitor(1kohm) to the drain of the NMOS and make the source as ground.
