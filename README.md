@@ -3,10 +3,10 @@
 Analyse the CS Amplifier and extract the parameters: DC Operating point, DC analysis, gain, power  
 <br>
 ## Specifications
-180nm, tsmc, VDD=1.8V, Power budget=50uW
+180nm, tsmc, VDD=1.8V, Power budget=50uW  
 <br>
 ## Components required
-Resistor(1Kohm), NMOS4, DC power supply, PMOS4
+Resistor(1Kohm), NMOS4, DC power supply, PMOS4  
 <br>
 ## Introduction
 CS Amplifier is a voltage amplification circuit, where input signal is applied at the gate terminal and output is taken at the drain of the circuit. This configuration yields high gain and less power dissipiation.  
@@ -17,6 +17,7 @@ Condition for saturation region:
 Gain:
 Av=Vout/Vin & Av=-Gm*Rout this indicates how much the input signal is amplified with respect to voltage 
 <br>
+
 ## Task 1: CS Amplifier with resistive load
 <br>
 
