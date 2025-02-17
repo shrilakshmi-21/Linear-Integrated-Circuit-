@@ -101,6 +101,16 @@ Power dissipiation in PMOS=(Vdd-Vout)*Id=3.9nW
 <br>
 The gain obtained is 37.019dB
 <br>
+
+### DC Sweep
+<br>
+
+![WhatsApp Image 2025-02-17 at 22 10 00_5d60aa88](https://github.com/user-attachments/assets/52235e8e-6520-49f0-83b7-df20deba238b)
+<br>
+* For low Vin M2 is in cutoff region and Vout stays high.
+* As Vin increases M2 enters saturation region.
+* M1 acts as active load.
+
 ## RESULT
 <br>
 
