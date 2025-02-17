@@ -1,6 +1,6 @@
 # Linear-Integrated-Circuit-
 ## AIM
-Analyse the CS Amplifier and extract the parameters: DC Operating point, DC analysis, gain, bandwidth, power 
+Analyse the CS Amplifier and extract the parameters: DC Operating point, DC analysis, gain, power 
 
 ## SPECIFICATIONS
 180nm, tsmc, VDD=1.8V, Power budget=50uW
@@ -45,9 +45,43 @@ For the previous circuit replace the load resistor with the PMOS and give the re
 
 ## ANALYSIS
 For the given specification we have to ensure that both the MOSFETS operates in the saturation region and obtain the current as 27.77uA.
-So to get the required current, the obtained length and width of the NMOS is 180nm and 600nm respectively.
-The output voltage obtained is 1.66008V.
-The gain obtained is 
+So to get the required current, the obtained length and width of the NMOS is 180nm and 300um respectively.
+
+# DC Operating point
+  ![WhatsApp Image 2025-02-17 at 21 51 56_f96d02ea](https://github.com/user-attachments/assets/9f097dfb-a5f5-48e4-893b-aefaec9bb538)
+
+The output voltage obtained is 1.79986V.
+
+# Transient analysis
+![WhatsApp Image 2025-02-17 at 21 55 50_2b7c2955](https://github.com/user-attachments/assets/ab280f43-c367-47d3-ad50-1390c2522752) ![WhatsApp Image 2025-02-17 at 21 54 47_05ed27c3](https://github.com/user-attachments/assets/2df975be-c9e2-4fa2-884f-d51d04e81e45)
+When the resistive load is replaced with the pmos, it acts like an inverter
+
+# AC analysis
+![WhatsApp Image 2025-02-17 at 21 57 29_cf6eaae7](https://github.com/user-attachments/assets/51cb3c96-3a9f-4b51-9362-e5b34060b17a)
+![WhatsApp Image 2025-02-17 at 21 59 04_ed01b0df](https://github.com/user-attachments/assets/c9e71e70-08a9-40a5-8b96-f71b863ba2e7)
+The gain obtained is 37.019dB
+
+## RESULT
+# CS Amplifier with resistive load
+* L=500nm, W=487nm
+* Id= 27.727uA for power 50uW
+* Q point= (1.77V, 27.7uA)
+* Gain=30.54dB
+
+# CS Amplifier with resistive load replaced with PMOS
+1. L=180nm, W=300um
+2. Id= 27.7uA
+3. Q point=(1.79V, 27.7uA)
+4. Gain=37.019dB
+
+## INFERENCE
+
+
+
+
+
+
+ 
 
 
 
