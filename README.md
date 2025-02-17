@@ -1,28 +1,31 @@
 # Linear-Integrated-Circuit-
-This is the first line.  
-
-
-
-This will be on the next line due to the two spaces at the end of the previous line. 
-
-## AIM
+## Aim
 Analyse the CS Amplifier and extract the parameters: DC Operating point, DC analysis, gain, power  
 
-## SPECIFICATIONS
+## Specifications
 180nm, tsmc, VDD=1.8V, Power budget=50uW
 
-## COMPONENTS REQUIRED
+## Components required
 Resistor(1Kohm), NMOS4, DC power supply, PMOS4
 
-## TASK 1
-## PROCEDURE
+## Introduction
+CS Amplifier is a voltage amplification circuit, where input signal is applied at the gate terminal and output is taken at the drain of the circuit. This configuration yields high gain and less power dissipiation.  
+A circuit to act as an amplifier, it should be in the saturation region  
+Condition for saturation region:  
+* NMOS: Vgs>Vt & Vds>Vov
+* PMOS: Vsg>Vt & Vsd>Vov
+Gain:
+Av=Vout/Vin & Av=-Gm*Rout this indicates how much the input signal is amplified with respect to voltage 
+
+## Task 1
+## Procedure
 1. Set VDD=1.8V, input voltage as 0.9V.
 2. Connect the resitor(1kohm) to the drain of the NMOS and make the source as ground.
 3. Set the width and length of the NMOS to get the required current.
 4. Give the appropriate values so as to get the DC, Transient and AC analysis.
 5. Extract the required parameters.
 
-## ANALYSIS
+## Analysis
 For the given specification we have to ensure that the MOSFET operates in saturation region and obtain the current as 27.77uA.
 So to get the required current, the obtained length and width of the MOSFET is 500nm and 487nm respectively. The circuit diagram is shown in the fig below.
   
@@ -32,6 +35,7 @@ So to get the required current, the obtained length and width of the MOSFET is 5
   ![image](https://github.com/user-attachments/assets/fc1c1ded-6419-4110-ad42-aee89b1156a5)
               
 The output voltage obtained is 1.772V.
+Power dissipiation across resistive load=(Vdd-Vout)*IR1=5.97uW
 
 ### Transient analysis
   ![image](https://github.com/user-attachments/assets/62066575-7eb1-4945-8706-d521f0583420)
@@ -45,11 +49,11 @@ Av=Vout/Vin=2(approx)
 
 The gain obtained is 30.54dB
 
-## TASK 2
-## PROCEDURE
+## Task 2
+## Procedure
 For the previous circuit replace the load resistor with the PMOS and give the required voltage.
 
-## ANALYSIS
+## Analysis
 For the given specification we have to ensure that both the MOSFETS operates in the saturation region and obtain the current as 27.77uA.
 So to get the required current, the obtained length and width of the NMOS is 180nm and 300um respectively.
 
@@ -57,6 +61,7 @@ So to get the required current, the obtained length and width of the NMOS is 180
   ![WhatsApp Image 2025-02-17 at 21 51 56_f96d02ea](https://github.com/user-attachments/assets/9f097dfb-a5f5-48e4-893b-aefaec9bb538)
 
 The output voltage obtained is 1.79986V.
+Power dissipiation in PMOS=(Vdd-Vout)*Id=3.9nW
 
 ### Transient analysis
 ![WhatsApp Image 2025-02-17 at 21 55 50_2b7c2955](https://github.com/user-attachments/assets/ab280f43-c367-47d3-ad50-1390c2522752) ![WhatsApp Image 2025-02-17 at 21 54 47_05ed27c3](https://github.com/user-attachments/assets/2df975be-c9e2-4fa2-884f-d51d04e81e45)
@@ -74,14 +79,19 @@ The gain obtained is 37.019dB
 * Id= 27.727uA for power 50uW
 * Q point= (1.77V, 27.7uA)
 * Gain=30.54dB
+* Power=5.97uW
 
 ### CS Amplifier with resistive load replaced with PMOS
 * L=180nm, W=300um
 * Id= 27.7uA
 * Q point=(1.79V, 27.7uA)
 * Gain=37.019dB
+* Power=3.9nW
 
 ## INFERENCE
+* When resistor is replaced with the PMOS it acts as an inverter.
+* By replacing the resistive load with PMOS it is observed that the gain is increased.
+* It is also observed that the power dissipation is also decreased when resistive load is replaced with the PMOS.
 
 
 
