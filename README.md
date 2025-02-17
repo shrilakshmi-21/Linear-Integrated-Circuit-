@@ -2,12 +2,15 @@
 ## Aim
 Analyse the CS Amplifier and extract the parameters: DC Operating point, DC analysis, gain, power  
 <br>
+
 ## Specifications
 180nm, tsmc, VDD=1.8V, Power budget=50uW  
 <br>
+
 ## Components required
 Resistor(1Kohm), NMOS4, DC power supply, PMOS4  
 <br>
+
 ## Introduction
 CS Amplifier is a voltage amplification circuit, where input signal is applied at the gate terminal and output is taken at the drain of the circuit. This configuration yields high gain and less power dissipiation.  
 A circuit to act as an amplifier, it should be in the saturation region  
@@ -35,6 +38,7 @@ So to get the required current, the obtained length and width of the MOSFET is 5
 <br> 
   ![image](https://github.com/user-attachments/assets/5808b121-3db3-4f2d-8eb6-26ce52d2bfa1)
 <br>
+
 ### DC Operating point
 <br>
 
@@ -43,6 +47,7 @@ So to get the required current, the obtained length and width of the MOSFET is 5
 The output voltage obtained is 1.772V.
 Power dissipiation across resistive load=(Vdd-Vout)*IR1=5.97uW
 <br>
+
 ### Transient analysis
 <br>
 
@@ -50,6 +55,7 @@ Power dissipiation across resistive load=(Vdd-Vout)*IR1=5.97uW
 <br>
 From the above waveform we can see that the MOSFET acts as a linear amplifier.
 <br>
+
 ### AC Analysis
 <br>
 
@@ -58,6 +64,7 @@ From the above waveform we can see that the MOSFET acts as a linear amplifier.
 <br>
 The gain obtained is 30.54dB
 <br>
+
 ## Task 2: CS Amplifier with current source load
 <br>
 
@@ -78,6 +85,7 @@ So to get the required current, the obtained length and width of the NMOS is 180
 The output voltage obtained is 1.79986V.
 Power dissipiation in PMOS=(Vdd-Vout)*Id=3.9nW
 <br>
+
 ### Transient analysis
 <br>
 
@@ -85,6 +93,7 @@ Power dissipiation in PMOS=(Vdd-Vout)*Id=3.9nW
 <br>
 When the resistive load is replaced with the pmos, it acts like an inverter
 <br>
+
 ### AC analysis
 <br>
 
@@ -103,6 +112,7 @@ The gain obtained is 37.019dB
 * Gain=30.54dB
 * Power=5.97uW
 <br>
+
 ### CS Amplifier with current source load
 * L=180nm, W=300um
 * Id= 27.7uA
@@ -110,6 +120,7 @@ The gain obtained is 37.019dB
 * Gain=37.019dB
 * Power=3.9nW
 <br>
+
 ## INFERENCE
 * By replacing the resistive load with PMOS it is observed that the gain is increased.
 * It is also observed that the power dissipation is also decreased when resistive load is replaced with the PMOS.
