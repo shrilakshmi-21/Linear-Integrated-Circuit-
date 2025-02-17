@@ -17,7 +17,7 @@ Condition for saturation region:
 Gain:
 Av=Vout/Vin & Av=-Gm*Rout this indicates how much the input signal is amplified with respect to voltage 
 
-## Task 1
+## Task 1: CS Amplifier with resistive load
 ## Procedure
 1. Set VDD=1.8V, input voltage as 0.9V.
 2. Connect the resitor(1kohm) to the drain of the NMOS and make the source as ground.
@@ -49,7 +49,7 @@ Av=Vout/Vin=2(approx)
 
 The gain obtained is 30.54dB
 
-## Task 2
+## Task 2: CS Amplifier with current source load
 ## Procedure
 For the previous circuit replace the load resistor with the PMOS and give the required voltage.
 
@@ -81,7 +81,7 @@ The gain obtained is 37.019dB
 * Gain=30.54dB
 * Power=5.97uW
 
-### CS Amplifier with resistive load replaced with PMOS
+### CS Amplifier with current source load
 * L=180nm, W=300um
 * Id= 27.7uA
 * Q point=(1.79V, 27.7uA)
@@ -89,7 +89,6 @@ The gain obtained is 37.019dB
 * Power=3.9nW
 
 ## INFERENCE
-* When resistor is replaced with the PMOS it acts as an inverter.
 * By replacing the resistive load with PMOS it is observed that the gain is increased.
 * It is also observed that the power dissipation is also decreased when resistive load is replaced with the PMOS.
 
