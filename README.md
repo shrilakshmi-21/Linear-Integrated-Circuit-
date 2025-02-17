@@ -1,7 +1,7 @@
 # Linear-Integrated-Circuit-
 ## Aim
 Analyse the CS Amplifier and extract the parameters: DC Operating point, DC analysis, gain, power  
-
+---
 ## Specifications
 180nm, tsmc, VDD=1.8V, Power budget=50uW
 
