@@ -34,6 +34,14 @@ In this simulation we are going to observe how the differential amplifier acts w
   <img width="1470" alt="C1" src="https://github.com/user-attachments/assets/175c9830-9f67-400f-bea8-e43c87b65136" />
 
 # DC ANALYSIS:  
+  ### PROCEDURE:
+  * Make the circuit as per the designed specification.
+  * Give the length and width of both the MOSFETS.
+  * Go to the simulation>operating point>place the .op extension.
+  * Run the simulation.
+  * You will find all the voltages and current flowing in the circuit.
+  * Compare the obtained result with the designed values and ensure if the values match for the given length and width of the MOSFET.
+    
   The main motive is to ensure the power specification, i.e., P<=1mW  
   For l=180n and w=19.3625u, got the following specification:  
   <img width="382" alt="op analysis" src="https://github.com/user-attachments/assets/d0485cd3-1e0a-49dd-b0f0-cef45fb44d00" />  
