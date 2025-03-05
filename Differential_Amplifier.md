@@ -79,7 +79,20 @@ In this simulation we are going to observe how the differential amplifier acts w
   Maximum input swing:  
   <img width="1470" alt="Screenshot 2025-03-05 at 10 02 04 PM" src="https://github.com/user-attachments/assets/661dc344-026a-48cd-8706-111a5bc83538" />  
   The output waveform is clipped indicating that it has reached saturation region.  
-The maximum output obtained is around 2V, which matches with the value of Vdd.
+The maximum output obtained is around 2V, which matches with the value of supply voltage, Vdd.  
+
+# AC ANALYSIS:
+  ### PROCEDURE:
+  * Right click on the voltage>Advanced>Sinusoidal, give AC amplitude as 1.
+  * Go to the AC analysis part and run the simulation.
+  * The frequency response will appear and calculate 3dB bandwidth.
+
+<img width="1470" alt="Screenshot 2025-03-05 at 10 29 26 PM" src="https://github.com/user-attachments/assets/5f48ea23-b16b-477d-8f64-5508d6220d50" />  
+It is observed that the low frequency response of amplifier is absent and the width of the bandwidth is increased. 
+3dB bandwidth= 15.05dB-3dB=12.05dB=3.79Ghz.
+
+
+
 
   
 
