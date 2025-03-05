@@ -12,5 +12,5 @@ Perform DC analysis, transient analysis, frequency response and extract the requ
   Rd=(2-1.1)/0.25m=3.6Kohm  
 * Rss=Vp/Iss  
   Rss=0.4/0.5m=800ohm  
-
+* 
 
