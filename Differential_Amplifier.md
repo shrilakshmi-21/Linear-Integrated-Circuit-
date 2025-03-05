@@ -8,7 +8,8 @@ Perform DC analysis, transient analysis, frequency response and extract the requ
   Advantages of differential amplifiers over normal amplifiers:  
   * Reject noise signals.
   * It has hign gain.
-  * Coupling capacitors are not used, thereby incresing the width of the bandwitdh by almost cancelling out the low frequency response of the         amplification process.
+  * Coupling capacitors are not used, thereby incresing the width of the bandwitdh by almost cancelling out the low frequency response of the amplification process.
+
   It has 2 input signals and can be classified as:
   * Common mode input voltage: We give the same voltage to both the input signals.
   * Differential mode input voltage: Two different voltages are given to different input signals.
@@ -35,7 +36,7 @@ In this simulation we are going to observe how the differential amplifier acts w
 # DC ANALYSIS:  
   The main motive is to ensure the power specification, i.e., P<=1mW  
   For l=180n and w=19.3625u, got the following specification:  
-  <img width="382" alt="op analysis" src="https://github.com/user-attachments/assets/d0485cd3-1e0a-49dd-b0f0-cef45fb44d00" />
+  <img width="382" alt="op analysis" src="https://github.com/user-attachments/assets/d0485cd3-1e0a-49dd-b0f0-cef45fb44d00" />  
   Obtained values:  
   * Vp=0.4V
   * Id1=Id2=0.25mA
@@ -43,6 +44,7 @@ In this simulation we are going to observe how the differential amplifier acts w
   * Vout=1.1V  
 
 # TRANSIENT ANALYSIS:
+  
   
 
 
