@@ -87,6 +87,7 @@ The maximum output obtained is around 2V, which matches with the value of supply
   * Go to the AC analysis part and run the simulation.
   * The frequency response will appear and calculate 3dB bandwidth.
 
+
 <img width="1470" alt="Screenshot 2025-03-05 at 10 29 26 PM" src="https://github.com/user-attachments/assets/5f48ea23-b16b-477d-8f64-5508d6220d50" />  
 It is observed that the low frequency response of amplifier is absent and the width of the bandwidth is increased. 
 3dB bandwidth= 15.05dB-3dB=12.05dB=3.79Ghz.
