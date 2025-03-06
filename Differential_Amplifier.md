@@ -205,7 +205,7 @@ Bandwidth has been increased from the previous two circuits.
 
 # INFERENCE:
 
-* **Gain:**
+### **Gain:**
   <br>
   <br>
   **Expected:** Circuit 2 should have the highest gain since an ideal current source has infinite resistance (no source degeneration) and circuit 3 as lowest gain.
@@ -217,7 +217,7 @@ Bandwidth has been increased from the previous two circuits.
   
   The current source may not be completely ideal, causing source degeneration.
 
-* **Bandwidth:**
+### **Bandwidth:**
 
   **Expected:** A differential amplifier with a current source instead of Rss should have a higher bandwidth due to       reduced source degeneration.  
   Circuit 3 should have slightly lower bandwidth than Circuit 2 because the NMOS current source has finite output         resistance.  
