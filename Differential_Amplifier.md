@@ -61,6 +61,9 @@ In this simulation we are going to observe how the differential amplifier acts w
   * Go the transient analysis part and give the reqired end time like 5ms.
   * Run the simulation.
   * Calculate the gain of the amplification part.
+    <br>
+    <br>
+
   ### Maximum input and output swing:
   Maximum input swing is the maximum volatge difference that can be given to the input terminals, while still maintaining linear operation and the output obtained at the corresponding value of input is the output swing.  
   
