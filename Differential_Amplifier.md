@@ -210,10 +210,10 @@ Bandwidth has been increased from the previous two circuits.
   **Expected:** Circuit 2 should have the highest gain since an ideal current source has infinite resistance (no source degeneration) and circuit 3 as lowest gain.
   <br>
   <br>
-  **Observed:** The gain has decreased in circuit 2 and 3.
-  <br>
-  Possible reasons for the decreament of gain in circuit 2:
+  **Observed:** The gain has decreased in circuit 2 and 3.  
   
+  
+  Possible reasons for the decreament of gain in circuit 2:
   The current source may not be completely ideal, causing source degeneration.
 
 ### **Bandwidth:**
