@@ -30,6 +30,12 @@ In this simulation we are going to observe how the differential amplifier acts w
   Vds=1.1-0.4=0.7V
 * Q-point=(0.7, 0.25m)@Vgs=0.6V
 
+# COMPONENTS REQUIRED:
+* NMOS4
+* Current source
+* Resistors-36kohm and 800ohm
+* Voltage source
+
 # CIRCUIT 1: 
   Differential amplifier with Rss  
   
@@ -46,7 +52,11 @@ In this simulation we are going to observe how the differential amplifier acts w
     
   The main motive is to ensure the power specification, i.e., P<=1mW  
   For l=180n and w=19.3625u, got the following specification:  
+  <br>
   <img width="382" alt="op analysis" src="https://github.com/user-attachments/assets/d0485cd3-1e0a-49dd-b0f0-cef45fb44d00" />  
+  <br>
+  ![image](https://github.com/user-attachments/assets/83399eb7-e92e-4cfa-97f2-c9f3a961fefe)
+  <br>
   Obtained values:  
   * Vp=0.4V
   * Id1=Id2=0.25mA
@@ -104,12 +114,20 @@ The maximum output obtained is around 2V, which matches with the value of supply
 3dB bandwidth= 15.05dB-3dB=12.05dB=3.79Ghz.
 
 # CIRCUIT 2  
-  ### Replacing the source resistance with current source:    
+  ### Replacing the source resistance with current source  
+  <img width="1470" alt="Screenshot 2025-03-05 at 11 09 39 PM" src="https://github.com/user-attachments/assets/fdfd7a86-0e48-4057-a622-967c58d8d9ba" />  
+  <br>
+  
+
 
 ## DC ANALYSIS  
 * For the same design, replace the sourc resistor with a current source and give the Iss value to the current source.
 * Check for the operating point.
 * Observe if the obtained value matches with the previous one for the same length and width.
+
+<img width="390" alt="Screenshot 2025-03-04 at 10 27 06 PM" src="https://github.com/user-attachments/assets/301ec408-7ccb-4fd1-81d6-4802bdb0d08f" />  
+<br>
+<br>
 
 Obtained values:
 * Vout=1.1V
@@ -119,14 +137,97 @@ Obtained values:
 ## TRANSIENT ANALYSIS:
 * Follow the same procedure as in the circuit 1 and observe the gain.
 
-The gain obtained is same as the circuit 1.
+  <img width="1470" alt="Screenshot 2025-03-06 at 7 59 10 PM" src="https://github.com/user-attachments/assets/f4de0434-adfb-4121-add6-fe6d508b712b" />
+
+ * Gain, Av=(1.10-1.33)/50m = -4.6
+ * 20logAv=13.25dB
 
 ## AC ANALYSIS:
-* 3dB bandwidth=  
+
+<img width="1470" alt="Screenshot 2025-03-06 at 7 33 43 PM" src="https://github.com/user-attachments/assets/0afa3ad3-c2f6-4079-a145-324085baf18a" />
+
+* 3dB bandwidth = 13.5-3 = 10.5 = 4.10Ghz.
 * It is observed that the bandwidth has been increased when compared to the circuit 1.
 
 # CIRCUIT 3
 ### Replacing the current source with a NMOS:  
+<img width="1470" alt="Screenshot 2025-03-06 at 7 54 11 PM" src="https://github.com/user-attachments/assets/4b443172-545c-4653-98db-1e98675ef970" />  
+
+## DC OPERATING POINT
+* First, we need to calculate value of Vb of 3rd MOSFET.
+* It should be in the saturation region.
+* Condition for saturation region:
+  Vds>=Vov
+  Vds>=Vgs-Vth
+  Vd-Vs>=Vg-Vs-Vth
+  0.4-0>=Vg-o-0.497
+  Vg<=0.897V
+* According to the condition, Vb should be less than or equal to 0.897V, thereby take Vb as 0.7V.
+* length and width obtained to get the values as per the designed specifications are 180nm and 14.1579um respectively.
+  <br>
+  <br>
+  <img width="390" alt="Screenshot 2025-03-04 at 10 27 06 PM" src="https://github.com/user-attachments/assets/f216673f-7797-4da3-a7ae-d96f31bcf92d" />
+  <br>
+  <br>
+* Obtained values are:
+  Idss=0.5mA
+  Id1=Id2=0.25mA
+  Vp=0.4V
+  Vout=1.1V
+  <br>
+  <br>
+
+## TRANSIENT ANALYSIS:
+
+  <img width="1470" alt="Screenshot 2025-03-06 at 7 59 10 PM" src="https://github.com/user-attachments/assets/f4de0434-adfb-4121-add6-fe6d508b712b" />  
+  <br>
+  <br>
+  * Gain, Av=(1.10-1.33)/50m=-4.6
+  * 20logAv=13.25dB
+
+## AC ANALYSIS: 
+
+<img width="1470" alt="Screenshot 2025-03-06 at 7 51 43 PM" src="https://github.com/user-attachments/assets/3abe299b-26d5-4506-8abb-0ce2c0267dd3" />  
+
+Bandwidth = 13.8-3dB=10.8dB=4.37Ghz.
+Bandwidth has been increased from the previous two circuits.  
+
+# RESULTS:  
+ 
+ | PARAMETER  | CIRCUIT 1 |  CIRCUIT 2  |  CIRCUIT 3  |  
+| ------------- | ------------- | ------------- | ------------- |
+| Id  | 0.5mA  |  0.5mA  |  0.5mA|
+| Id1,Id2  | 0.25mA  |  0.25mA  |  0.25mA  |
+|  Vout  |  1.1V  |  1.1V  |  1.1V  |  
+|  Vp  |  0.4V  |  0.4V  |  0.4V  |
+|  Gain  |  -5.4  |  -4.6  |  -4.6  |
+|  Bandwidth  |  3.66Ghz  |  4.10Ghz  |  4.37Ghz  |  
+
+# INFERENCE:
+
+* **Gain:**
+  <br>
+  <br>
+  **Expected:** Circuit 2 should have the highest gain since an ideal current source has infinite resistance (no source degeneration) and circuit 3 as lowest gain.
+  <br>
+  <br>
+  **Observed:** The gain has decreased in circuit 2 and 3.
+  <br>
+  Possible reasons for the decreament of gain in circuit 2:
+  
+  The current source may not be completely ideal, causing source degeneration.
+
+* **Bandwidth:**
+
+  **Expected:** A differential amplifier with a current source instead of Rss should have a higher bandwidth due to       reduced source degeneration.  
+  Circuit 3 should have slightly lower bandwidth than Circuit 2 because the NMOS current source has finite output         resistance.  
+  <br>
+  **Observed:** Bandwidth increases from Circuit 1 → Circuit 2 → Circuit 3, which aligns with expectations.
+  Circuit 3 (NMOS current source) has the highest bandwidth despite its finite output resistance.
+
+
+
+  
 
 
 
