@@ -50,6 +50,7 @@ In this simulation we are going to observe how the differential amplifier acts w
   * Id1=Id2=0.25mA
   * Idss=0.5mA
   * Vout=1.1V
+
     This implies that for the given width and length, the output obtained matches exactly with the designed values.  
 
 # TRANSIENT ANALYSIS:
