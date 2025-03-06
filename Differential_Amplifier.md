@@ -35,7 +35,7 @@ In this simulation we are going to observe how the differential amplifier acts w
   
   <img width="1470" alt="C1" src="https://github.com/user-attachments/assets/175c9830-9f67-400f-bea8-e43c87b65136" />
 
-# DC ANALYSIS:  
+## DC ANALYSIS:  
   ### PROCEDURE:
   * Make the circuit as per the designed specification.
   * Give the length and width of both the MOSFETS.
@@ -55,7 +55,7 @@ In this simulation we are going to observe how the differential amplifier acts w
 
     This implies that for the given width and length, the output obtained matches exactly with the designed values.  
 
-# TRANSIENT ANALYSIS:
+## TRANSIENT ANALYSIS:
   ### PROCEDURE
   * After getting the required operating points from the DC Analysis, right click on the input voltages>advanced>sinusoidal and give the specified DC voltage, amplitude and freuency
   * Go the transient analysis part and give the reqired end time like 5ms.
@@ -90,7 +90,7 @@ In this simulation we are going to observe how the differential amplifier acts w
 * The output waveform is clipped indicating that it has reached saturation region.  
 The maximum output obtained is around 2V, which matches with the value of supply voltage, Vdd.  
 
-# AC ANALYSIS:
+## AC ANALYSIS:
   ### PROCEDURE:
   * Right click on the voltage>Advanced>SinE, give AC amplitude as 1.
   * Go to the AC analysis part and run the simulation.
@@ -106,7 +106,7 @@ The maximum output obtained is around 2V, which matches with the value of supply
 # CIRCUIT 2  
   ### Replacing the source resistance with current source:    
 
-# DC ANALYSIS  
+## DC ANALYSIS  
 * For the same design, replace the sourc resistor with a current source and give the Iss value to the current source.
 * Check for the operating point.
 * Observe if the obtained value matches with the previous one for the same length and width.
@@ -116,12 +116,12 @@ Obtained values:
 * Vp=0.4V
 * Id1=Id2=0.25mA
 
-# TRANSIENT ANALYSIS:
+## TRANSIENT ANALYSIS:
 * Follow the same procedure as in the circuit 1 and observe the gain.
 
 The gain obtained is same as the circuit 1.
 
-# AC ANALYSIS:
+## AC ANALYSIS:
 * 3dB bandwidth=  
 * It is observed that the bandwidth has been increased when compared to the circuit 1.
 
