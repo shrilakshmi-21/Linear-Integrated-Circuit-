@@ -30,7 +30,9 @@ In this simulation we are going to observe how the differential amplifier acts w
   Vds=1.1-0.4=0.7V
 * Q-point=(0.7, 0.25m)@Vgs=0.6V
 
-# CIRCUIT 1:  
+# CIRCUIT 1: 
+  Differential amplifier with Rss  
+  
   <img width="1470" alt="C1" src="https://github.com/user-attachments/assets/175c9830-9f67-400f-bea8-e43c87b65136" />
 
 # DC ANALYSIS:  
@@ -84,7 +86,7 @@ The maximum output obtained is around 2V, which matches with the value of supply
 
 # AC ANALYSIS:
   ### PROCEDURE:
-  * Right click on the voltage>Advanced>Sinusoidal, give AC amplitude as 1.
+  * Right click on the voltage>Advanced>SinE, give AC amplitude as 1.
   * Go to the AC analysis part and run the simulation.
   * The frequency response will appear and calculate 3dB bandwidth.
 
@@ -92,6 +94,34 @@ The maximum output obtained is around 2V, which matches with the value of supply
 <img width="1470" alt="Screenshot 2025-03-05 at 10 29 26 PM" src="https://github.com/user-attachments/assets/5f48ea23-b16b-477d-8f64-5508d6220d50" />  
 * It is observed that the low frequency response of amplifier is absent and the width of the bandwidth is increased.  
 3dB bandwidth= 15.05dB-3dB=12.05dB=3.79Ghz.
+
+# CIRCUIT 2  
+  ### Replacing the source resistance with current source:    
+
+# DC ANALYSIS  
+* For the same design, replace the sourc resistor with a current source and give the Iss value to the current source.
+* Check for the operating point.
+* Observe if the obtained value matches with the previous one for the same length and width.
+
+Obtained values:
+* Vout=1.1V
+* Vp=0.4V
+* Id1=Id2=0.25mA
+
+# TRANSIENT ANALYSIS:
+* Follow the same procedure as in the circuit 1 and observe the gain.
+
+The gain obtained is same as the circuit 1.
+
+# AC ANALYSIS:
+* 3dB bandwidth=  
+* It is observed that the bandwidth has been increased when compared to the circuit 1.
+
+# CIRCUIT 3
+### Replacing the current source with a NMOS:  
+
+
+
 
 
 
