@@ -78,7 +78,7 @@ In this simulation we are going to observe how the differential amplifier acts w
   
   Minimum input swing is given by the formula:  
   Vicm(min)=-Vss+Vp+Vgs= 0+0.4+0.6=1V  
-  Maximum output swing is given by the formula:  
+  Maximum input swing is given by the formula:  
   Vicm(max)=vt+Vdd-(I*Rd)/2= 0.497+2-(0.5m*3.6K)/2=1.597V  
 
   This is the transient analysis obtained when the following values were given:  
