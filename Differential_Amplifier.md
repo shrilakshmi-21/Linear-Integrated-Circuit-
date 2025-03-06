@@ -206,8 +206,7 @@ Bandwidth has been increased from the previous two circuits.
 # INFERENCE:
 
 ### **Gain:**
-  <br>
-  <br>
+
   **Expected:** Circuit 2 should have the highest gain since an ideal current source has infinite resistance (no source degeneration) and circuit 3 as lowest gain.
   <br>
   <br>
