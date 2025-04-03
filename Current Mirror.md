@@ -1,3 +1,4 @@
+# AIM:
 Design and analyze current mirror circuit as an active load in an amplifier and to analyze the characteristics of the circuit with DC, AC and transient analysis.
 
 # THEORY:
