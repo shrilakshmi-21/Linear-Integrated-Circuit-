@@ -16,9 +16,5 @@ __Advantages:__
 Av>=10V/V, Vdd=1.8V, P<=1mW  
 __Design:__  
 * P<=1mW
-    1m<=Vdd.Id
-    Id=1m/1.8
-    Id=0.555mA
-
-  
-
+<br>
+I=P/Vdd=0.5555mA
