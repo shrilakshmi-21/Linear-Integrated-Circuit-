@@ -25,7 +25,7 @@ Itotal=0.5555mA<br>
 Iref=0.1851mA and Ix=0.3703mA
 
 # CIRCUIT 1:
-Common source amplifier:  
+__Common source amplifier:__
 ![image](https://github.com/user-attachments/assets/24601c01-0791-4015-acf1-7913bc3491fe)  
 
 # 1:1 Current Ratio:
@@ -146,7 +146,22 @@ L=1u, W=13.75u<br>
 
 ## AC ANALYSIS: 
 ![image](https://github.com/user-attachments/assets/f84c3f24-390f-4ec4-871e-83e6ffbc022d)  
-3dB gain: 26.080-3dB => 195.658MHz
+3dB gain: 26.080-3dB => 195.658MHz  
+
+# CIRCUIT 2:
+__Differential amplifier__
+![image](https://github.com/user-attachments/assets/d134c271-d32d-428d-b352-3a36cac4e938)  
+
+## DC ANALYSIS:
+![image](https://github.com/user-attachments/assets/f5e2aee1-c8b3-41de-86c5-704160228c0d)  
+
+## TRANSIENT ANALYSIS:
+![image](https://github.com/user-attachments/assets/68ea57c3-90c5-4fde-89ca-eb8434df9425)
+
+## AC ANALYSIS:
+![image](https://github.com/user-attachments/assets/4fefb772-ae9c-4378-a9c2-98048fdd0d63)
+3dB gain: 28.12dB-25.12dB => 741.443MHz
+
 
 
 
