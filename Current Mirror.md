@@ -1,4 +1,3 @@
-# AIM:
 Design and analyze current mirror circuit as an active load in an amplifier and to analyze the characteristics of the circuit with DC, AC and transient analysis.
 
 # THEORY:
@@ -83,7 +82,7 @@ L=1u, W=10.253u<br>
 ## TRANSIENT ANALYSIS:
 ![image](https://github.com/user-attachments/assets/a4658a52-02d2-4586-b792-16a34353e4aa)  
 * Peak voltage: 1.5V
-* *Minimum voltage: 0.316V
+* Minimum voltage: 0.316V
 
 ## AC ANALYSIS:
 ![image](https://github.com/user-attachments/assets/2ae2c540-bd8c-4ff7-8622-a354f37112b5)  
@@ -98,6 +97,59 @@ L=180n, W=10u
 L=180n, W=20u
 * __M3:(NMOS)__<br>
 L=180n, W=3.02u<br>
+![image](https://github.com/user-attachments/assets/21714b50-1ecd-4b89-8978-c66cca19efb6)
+
+## TRANSIENT ANALYSIS:
+<img width="1470" alt="Screenshot 2025-04-03 at 10 57 21 PM" src="https://github.com/user-attachments/assets/486ed226-5f03-42a3-ab4b-d67c0a784965" />  
+
+* Peak voltage: 1.407V
+* Minimum voltage: 0.417V
+
+## AC ANALYSIS:
+<img width="1470" alt="Screenshot 2025-04-03 at 11 02 00 PM" src="https://github.com/user-attachments/assets/fdbe587e-fe37-479a-86d0-b9ca57c2bd96" />  
+3dB gain: 21.389dB-3dB => 406.105MHz
+
+## L=500nm:
+## DC ANALYSIS:
+* __M1:(PMOS)__<br>
+L=180n, W=10u
+* __M2:(PMOS)__<br>
+L=180n, W=20u
+* __M3:(NMOS)__<br>
+L=500n, W=7.68u<br>
+<img width="582" alt="Screenshot 2025-04-03 at 11 06 25 PM" src="https://github.com/user-attachments/assets/d8f48abb-53df-4a3f-8df5-12ab9f2eee7e" />
+
+## TRANSIENT ANALYSIS:
+<img width="1470" alt="Screenshot 2025-04-03 at 11 11 12 PM" src="https://github.com/user-attachments/assets/9cde1d13-51ea-4fc7-bf02-b967621d1e09" />
+* Peak voltage: 1.513V
+* Minimum voltage: 0.315V
+
+## AC ANALYSIS:
+<img width="1470" alt="Screenshot 2025-04-03 at 11 13 27 PM" src="https://github.com/user-attachments/assets/0d3625c9-8e61-4b29-b870-3cda51b87495" />  
+3dB gain: 25.626dB-3dB => 254.229MHz
+
+## L=1um:
+## DC ANALYSIS:
+* __M1:(PMOS)__<br>
+L=180n, W=10u
+* __M2:(PMOS)__<br>
+L=180n, W=20u
+* __M3:(NMOS)__<br>
+L=1u, W=13.75u<br>
+<img width="561" alt="Screenshot 2025-04-03 at 11 18 21 PM" src="https://github.com/user-attachments/assets/bd22cdb8-9a7b-4b81-b898-06117733429c" />
+
+## TRANSIENT ANALYSIS:
+<img width="1470" alt="Screenshot 2025-04-03 at 11 20 12 PM" src="https://github.com/user-attachments/assets/b7004e83-94f5-4dfc-9bf1-ae7a795fedc3" />
+* Peak voltage: 1.521V
+* Minimum voltage: 0.317V
+
+## AC ANALYSIS: 
+![image](https://github.com/user-attachments/assets/f84c3f24-390f-4ec4-871e-83e6ffbc022d)  
+3dB gain: 26.080-3dB => 195.658MHz
+
+
+
+
 
 
 
