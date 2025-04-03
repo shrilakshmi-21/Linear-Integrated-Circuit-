@@ -15,6 +15,5 @@ __Advantages:__
 # DESIGN SPECIFICATIONS:
 Av>=10V/V, Vdd=1.8V, P<=1mW  
 __Design:__  
-* P<=1mW
-<br>
+* P<=1mW<br>
 I=P/Vdd=0.5555mA
