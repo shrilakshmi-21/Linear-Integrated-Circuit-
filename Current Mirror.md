@@ -96,7 +96,18 @@ L=1u, W=10.253u<br>
 ## For 1:1 Ratio
 | LENGTH | W/L | GAIN(in dB) | BANDWIDTH |
 | ------ | --- | ----------- | --------- |
-| 180n   | 2.179u/180n | 21dB | 1.009GHz |
+| 180n   | 2.179u/180n | 21dB | 1.009GHz |  
+| 500n   | 5.71u/500n  | 25.371dB | 531.987MHz |
+| 1u     | 10.253u/1u  | 25.824dB | 463.266MHz |  
+
+__EXPLANATION:__  
+
+* As L increases, gain increases due to higher output resistance, reducing short-channel effects.
+* As L increases, bandwidth decreases because of increased parasitic capacitance, limiting high-frequency response.
+* For L = 180 nm, gain is lower (21 dB) due to short-channel effects, but bandwidth is high (1.009 GHz) due to lower capacitance.
+* For L = 500 nm, gain increases (25.371 dB) as output resistance improves, but bandwidth drops (531.987 MHz) due to higher capacitance.
+* For L = 1 µm, gain is highest (25.824 dB) as the channel is longer, further increasing resistance, but bandwidth is lowest (463.266 MHz).
+* Higher W/L ratios at larger L also contribute to improved gain but worsen frequency response due to increased capacitance.
 
 # 1:2 CURRENT RATIO:
 ## L=180nm:  
@@ -158,7 +169,24 @@ L=1u, W=13.75u<br>
 ## AC ANALYSIS: 
 ![image](https://github.com/user-attachments/assets/f84c3f24-390f-4ec4-871e-83e6ffbc022d)  
 * Gain: 26.080dB
-* 3dB bandwidth: 26.080-3dB => 195.658MHz  
+* 3dB bandwidth: 26.080-3dB => 195.658MHz
+
+# RESULT:  
+## For 1:2 Ratio:
+
+| LENGTH | W/L | GAIN(in dB) | BANDWIDTH |
+| ------ | --- | ----------- | --------- |
+| 180nm  | 3.02u/180n | 21.389dB | 406.105MHz |
+| 500nm  | 7.68u/500n | 25.626dB | 254.229MHz |
+| 1u     | 13.75u/1u  | 26.080dB | 195.658MHz |
+
+__EXPLANATION:__ 
+* Expected Output:<br>
+For a 1:2 current mirror, the gain should be higher than the 1:1 ratio due to the increased W/L ratio, which improves output resistance. As L increases, gain should continue to rise, while bandwidth should decrease due to increasing parasitic capacitance. The reduction in bandwidth is expected to be more pronounced than in the 1:1 ratio because of the larger transistor size, which increases capacitance and slows the circuit response.
+
+* Actual Output:<br>
+The actual gain values were slightly lower than expected due to short-channel effects and parasitic capacitance. As L increased, gain increased as expected, but bandwidth was lower than predicted due to higher gate-drain capacitance and reduced high-frequency response. The largest deviation occurred at shorter L, where short-channel effects limited the gain improvement, while at longer L, parasitic capacitance caused a more significant bandwidth drop than anticipated.
+
 
 # CIRCUIT 2:
 __Differential amplifier__
@@ -173,7 +201,32 @@ __Differential amplifier__
 ## AC ANALYSIS:
 ![image](https://github.com/user-attachments/assets/4fefb772-ae9c-4378-a9c2-98048fdd0d63)  
 * Gain: 28.12dB
-* 3dB bandwidth: 28.12dB-25.12dB => 741.443MHz
+* 3dB bandwidth: 28.12dB-25.12dB => 741.443MHz  
+
+# RESULT:  
+
+* __Common Source Current Mirror (1:1 ratio):__  
+
+  * Gain: Increases with length (max ~25.8 dB)
+  * Bandwidth: Decreases with length (min ~463 MHz)
+  * Behavior: Lower gain and higher bandwidth at shorter L due to short-channel effects.
+  
+* __Common Source Current Mirror (1:2 ratio):__
+  * Gain: Slightly higher than 1:1 for same L (max ~26 dB)
+  * Bandwidth: Lower than 1:1 for same L (min ~195 MHz)
+  * Behavior: Increased W/L improves gain but adds more parasitic capacitance, reducing bandwidth.
+* Differential Amplifier with Current Mirror Load:
+  * Gain: 28.12 dB (highest among all)
+  * 3dB Bandwidth: 741.443 MHz
+  * Behavior: Balance of high gain and good bandwidth, better than both 1:1 and 1:2 configurations.
+
+# INFERENCE: 
+
+The differential amplifier with a current mirror load clearly outperforms individual current mirror stages in both gain and bandwidth.<br>
+Current mirror configurations (1:1 and 1:2) show a trade-off: increasing gain reduces bandwidth due to parasitic effects.<br>
+In contrast, the differential pair benefits from active load (current mirror) which improves output resistance without significantly increasing capacitance, leading to enhanced gain while still maintaining a respectable bandwidth.<br>
+Hence, using a differential architecture with current mirror load is a superior design choice for applications requiring high gain and wide bandwidth simultaneously.<br>
+
 
 
 
