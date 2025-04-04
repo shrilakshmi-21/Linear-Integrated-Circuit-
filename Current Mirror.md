@@ -49,7 +49,8 @@ Av: 9.67V/V
 
 ## AC ANALYSIS:
 ![image](https://github.com/user-attachments/assets/4fb3e322-b98a-4016-a120-b5bb9a4e72a9)  
-3dB gain: 21dB-3dB= 18dB => 1.009GHz
+* Gain: 21dB
+* 3dB bandwidth: 21dB-3dB= 18dB => 1.009GHz
 
 ## L=500nm:
 ## DC ANALYSIS
@@ -68,7 +69,8 @@ l=500n, W=5.71u<br>
 
 ## AC ANALYSIS:
 ![image](https://github.com/user-attachments/assets/50bec916-5ead-4886-ab91-29cc3bf83cf1)  
-3dB gain: 25.371dB-3dB => 531.987MHz
+* Gain: 25.371dB
+* 3dB bandwidth: 25.371dB-3dB => 531.987MHz
 
 ## L=1u:
 ## DC ANALYSIS:
@@ -87,7 +89,14 @@ L=1u, W=10.253u<br>
 
 ## AC ANALYSIS:
 ![image](https://github.com/user-attachments/assets/2ae2c540-bd8c-4ff7-8622-a354f37112b5)  
-3dB gain: 25.824dB-3dB => 463.226MHz
+* Gain: 25.824dB
+* 3dB bandwidth: 25.824dB-3dB => 463.226MHz
+
+# RESULT:
+## For 1:1 Ratio
+| LENGTH | W/L | GAIN(in dB) | BANDWIDTH |
+| ------ | --- | ----------- | --------- |
+| 180n   | 2.179u/180n | 21dB | 1.009GHz |
 
 # 1:2 CURRENT RATIO:
 ## L=180nm:  
@@ -108,7 +117,8 @@ L=180n, W=3.02u<br>
 
 ## AC ANALYSIS:
 <img width="1470" alt="Screenshot 2025-04-03 at 11 02 00 PM" src="https://github.com/user-attachments/assets/fdbe587e-fe37-479a-86d0-b9ca57c2bd96" />  
-3dB gain: 21.389dB-3dB => 406.105MHz
+* Gain: 21.389dB
+* 3dB bandwidth: 21.389dB-3dB => 406.105MHz
 
 ## L=500nm:
 ## DC ANALYSIS:
@@ -127,7 +137,8 @@ L=500n, W=7.68u<br>
 
 ## AC ANALYSIS:
 <img width="1470" alt="Screenshot 2025-04-03 at 11 13 27 PM" src="https://github.com/user-attachments/assets/0d3625c9-8e61-4b29-b870-3cda51b87495" />  
-3dB gain: 25.626dB-3dB => 254.229MHz
+* Gain: 25.626dB
+* 3dB bandwidth: 25.626dB-3dB => 254.229MHz
 
 ## L=1um:
 ## DC ANALYSIS:
@@ -146,7 +157,8 @@ L=1u, W=13.75u<br>
 
 ## AC ANALYSIS: 
 ![image](https://github.com/user-attachments/assets/f84c3f24-390f-4ec4-871e-83e6ffbc022d)  
-3dB gain: 26.080-3dB => 195.658MHz  
+* Gain: 26.080dB
+* 3dB bandwidth: 26.080-3dB => 195.658MHz  
 
 # CIRCUIT 2:
 __Differential amplifier__
@@ -159,8 +171,9 @@ __Differential amplifier__
 ![image](https://github.com/user-attachments/assets/68ea57c3-90c5-4fde-89ca-eb8434df9425)
 
 ## AC ANALYSIS:
-![image](https://github.com/user-attachments/assets/4fefb772-ae9c-4378-a9c2-98048fdd0d63)
-3dB gain: 28.12dB-25.12dB => 741.443MHz
+![image](https://github.com/user-attachments/assets/4fefb772-ae9c-4378-a9c2-98048fdd0d63)  
+* Gain: 28.12dB
+* 3dB bandwidth: 28.12dB-25.12dB => 741.443MHz
 
 
 
